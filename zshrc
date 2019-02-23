@@ -119,3 +119,4 @@ eval "$(rbenv init -)"
 export EDITOR="vim"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+export TERM=xterm-256color

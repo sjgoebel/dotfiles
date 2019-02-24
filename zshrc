@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export TERM=xterm-256color
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/stephengoebel/.oh-my-zsh"
 
@@ -119,4 +120,3 @@ eval "$(rbenv init -)"
 export EDITOR="vim"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
-export TERM=xterm-256color

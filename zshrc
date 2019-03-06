@@ -120,3 +120,6 @@ export EDITOR="vim"
 #export PATH="$HOME/.jenv/bin:$PATH"
 #eval "$(jenv init -)"
 export SDKMAN_DIR="/home/sjgoebel/.sdkman"
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"

@@ -1,5 +1,10 @@
 [user]
 	name = sjgoebel
 	email = sgoebel@gmail.com
+	signingkey = BF1C400AB7BDB7D1
 [credential]
 	helper = osxkeychain
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg

@@ -1,7 +1,7 @@
 [user]
 	name = sjgoebel
 	email = sgoebel@gmail.com
-	signingkey = BF1C400AB7BDB7D1
+	signingkey = 707AC8F37E50E0B7 
 [credential]
 	helper = osxkeychain
 [commit]

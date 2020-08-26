@@ -127,7 +127,7 @@ eval "$(rbenv init -)"
 export EDITOR="vim"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
-
+export GPG_TTY=$(tty)
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/stephengoebel/.sdkman"
 [[ -s "/Users/stephengoebel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/stephengoebel/.sdkman/bin/sdkman-init.sh"

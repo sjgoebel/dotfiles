@@ -136,5 +136,6 @@ fi
 export SDKMAN_DIR="/Users/stephengoebel/.sdkman"
 [[ -s "/Users/stephengoebel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/stephengoebel/.sdkman/bin/sdkman-init.sh"
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

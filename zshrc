@@ -126,7 +126,7 @@ eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 export EDITOR="vim"
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# eval "$(jenv init -)"
 export GPG_TTY=$(tty)
 if [ -f "${HOME}/.gnupg/.gpg-agent-info" ]; then
     . "${HOME}/.gnupg/.gpg-agent-info"
@@ -136,6 +136,5 @@ fi
 export SDKMAN_DIR="/Users/stephengoebel/.sdkman"
 [[ -s "/Users/stephengoebel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/stephengoebel/.sdkman/bin/sdkman-init.sh"
 
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

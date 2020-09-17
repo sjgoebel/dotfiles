@@ -128,9 +128,11 @@ export EDITOR="vim"
 export PATH="$HOME/.jenv/bin:$PATH"
 # eval "$(jenv init -)"
 export GPG_TTY=$(tty)
-if [ -f "${HOME}/.gnupg/.gpg-agent-info" ]; then
-    . "${HOME}/.gnupg/.gpg-agent-info"
+if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
+    source ~/.gnupg/.gpg-agent-info
     export GPG_AGENT_INFO
+else
+    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
 fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/stephengoebel/.sdkman"

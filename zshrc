@@ -122,6 +122,7 @@ zle -N zle-keymap-select
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 export EDITOR="vim"

@@ -126,6 +126,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 #eval "$(pyenv init -)"
 #eval "$(rbenv init -)"
+eval "$(nodenv init -)"
 export EDITOR="vim"
 export PATH="$HOME/.jenv/bin:$PATH"
 # eval "$(jenv init -)"
@@ -136,6 +137,7 @@ if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
 else
 #    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
 fi
+export GPG_TTY=$(tty)
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/stephengoebel/.sdkman"
 [[ -s "/Users/stephengoebel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/stephengoebel/.sdkman/bin/sdkman-init.sh"

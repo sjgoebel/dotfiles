@@ -5,7 +5,7 @@
 [credential]
 	helper = osxkeychain
 [commit]
-	gpgsign = true
+	gpgsign = false 
 [gpg]
 	program = gpg
 [filter "lfs"]
@@ -15,3 +15,5 @@
 	required = true
 [init]
 	defaultBranch = main
+[core]
+	autocrlf = input

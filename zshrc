@@ -70,11 +70,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git colorize pip python brew osx dotenv rbenv pyenv 
+  git colorize pip python brew osx dotenv rbenv pyenv keychain gpg-agent 
 )
 
 source $ZSH/oh-my-zsh.sh
-
+zstyle :omz:plugins:keychain agents ssh,gpg
+zstyle :omz:plugins:keychain identities id_rsa 7F46E62596AB65BC
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -124,6 +125,7 @@ zle -N zle-keymap-select
 export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+export PATH=“/Library/TeX/texbin/:$PATH”
 #eval "$(pyenv init -)"
 #eval "$(rbenv init -)"
 eval "$(nodenv init -)"
@@ -146,3 +148,5 @@ export SDKMAN_DIR="/Users/stephengoebel/.sdkman"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/opt/homebrew/sbin:$PATH"
 export GPG_TTY=$(tty)
+alias python=/opt/homebrew/bin/python3
+

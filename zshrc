@@ -127,7 +127,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH=“/Library/TeX/texbin/:$PATH”
 #eval "$(pyenv init -)"
-#eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 eval "$(nodenv init -)"
 export EDITOR="vim"
 export PATH="$HOME/.jenv/bin:$PATH"
